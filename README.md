@@ -1,4 +1,4 @@
-# Crypto-Letter-Substitutions-JS
+# Crypto Letter Substitutions JS
 For solving letter substitution / solving cryptograms
 
 ## How it works
