@@ -3,7 +3,7 @@ For solving letter substitution / solving cryptograms
 
 ## How it works
 
-You input a ciphertext, some text you might know the meaning of, and the meaning you propose, then this code swaps out the letters in the ciphertext so you can see if that solution looks right.
+You input a ciphertext, some text you might know the meaning of, and the meaning you propose, then this code swaps out the letters in the ciphertext so you can see if that solution looks right. If it does then it might help to figure out what the rest of the letters mean too.
 
 ## Example usage:
 
