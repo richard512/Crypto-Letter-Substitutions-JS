@@ -8,12 +8,12 @@ You input a ciphertext, some text you might know the meaning of, and the meaning
 ## Example usage:
 
 ```
-ciphertext = 'skd nz hgpdpymw otyy zcmj hmptbwm akmd tjm asz-agjm';
-needSolved = 'skd nz hgpdpymw otyy zcmj';
-mySolution = "why do bicycles fall over";
+ciphertext = 'skd nz hgpdpymw otyy zcmj? hmptbwm akmd tjm asz-agjm!';
+needSolved = 'skd nz hgpdpymw otyy zcmj? hmptbwm';
+mySolution = "why do bicycles fall over? because";
 plaintext = tryLetterSubstitutions(needSolved, mySolution);
 
 /*
-RESULT: "why do bicycles fall over because ahey are awo-aire"
+RESULT: "why do bicycles fall over? because _hey are _wo-_ire!"
 */
 ```
