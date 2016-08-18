@@ -1,0 +1,63 @@
+freqLetters = [
+	"e",
+	"t",
+	"a",
+	"o",
+	"i",
+	"n",
+	"s",
+	"r",
+	"h",
+	"l",
+	"d",
+	"c",
+	"u",
+	"m",
+	"f",
+	"p",
+	"g",
+	"w",
+	"y",
+	"b",
+	"v",
+	"k",
+	"x",
+	"j",
+	"q",
+	"z"
+	]
+
+commons = {
+	2: ["of", "to", "in", "it", "is", "be", "as", "at", "so", "we", "he", "by", "or", "on", "do", "if", "me", "my", "up", "an", "go", "no", "us", "am"],
+	3: ["the", "and", "for", "are", "but", "not", "you", "all", "any", "can", "had", "her", "was", "one", "our", "out", "day", "get", "has", "him", "his", "how", "man", "new", "now", "old", "see", "two", "way", "who", "boy", "did", "its", "let", "put", "say", "she", "too", "use"],
+	4: ["that", "with", "have", "this", "will", "your", "from", "they", "know", "want", "been", "good", "much", "some", "time", "very", "when", "come", "here", "just", "like", "long", "make", "many", "more", "only", "over", "such", "take", "than", "them", "well", "were"]
+}
+
+key = {
+	'a': 'a',
+	'b': 'b',
+	'c': 'c',
+	'd': 'd',
+	'e': 'e',
+	'f': 'f',
+	'g': 'g',
+	'h': 'h',
+	'i': 'i',
+	'j': 'j',
+	'k': 'k',
+	'l': 'l',
+	'm': 'm',
+	'n': 'n',
+	'o': 'o',
+	'p': 'p',
+	'q': 'q',
+	'r': 'r',
+	's': 's',
+	't': 't',
+	'u': 'u',
+	'v': 'v',
+	'w': 'w',
+	'x': 'x',
+	'y': 'y',
+	'z': 'z'
+	}
