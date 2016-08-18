@@ -1,7 +1,32 @@
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
-ciphertext = 'skd nz hgpdpymw otyy zcmj hmptbwm akmd tjm asz-agjm'
-//ciphertext = 'daag'
-words = ciphertext.split(' ')
+alphabet = 'abcdefghijklmnopqrstuvwxyz';
+key = {
+	'a': '_',
+	'b': 'b',
+	'c': 'c',
+	'd': 'd',
+	'e': 'e',
+	'f': 'f',
+	'g': 'g',
+	'h': 'h',
+	'i': 'i',
+	'j': 'j',
+	'k': 'k',
+	'l': 'l',
+	'm': 'm',
+	'n': 'n',
+	'o': 'o',
+	'p': 'p',
+	'q': 'q',
+	'r': 'r',
+	's': 's',
+	't': 't',
+	'u': 'u',
+	'v': 'v',
+	'w': 'w',
+	'x': 'x',
+	'y': 'y',
+	'z': 'z'
+	};
 
 function tryLetterSubstitutions(wordA, wordB) {
 	wordA = wordA.toLowerCase()
@@ -13,16 +38,16 @@ function tryLetterSubstitutions(wordA, wordB) {
 	tmpkey = key
 
 	for (x in wordA) {
-		//letterIndex = alphabet.indexOf(wordA[x])
-		//tmpkey = tmpkey.substr(0,letterIndex) + wordB[x] + tmpkey.substr(letterIndex+1)
-		tmpkey[wordA[x]] = wordB[x]
-		//console.log('Letter '+wordA[x]+' should be '+wordB[x])
+		if (tmpkey[wordA[x]]) {
+			tmpkey[wordA[x]] = wordB[x]
+			console.log(wordA[x] +' should be '+ wordB[x])
+		}
 	}
 
 	tmpkeystr = Object.keys(tmpkey).join('')
 
-	console.log(alphabet+' = alphabet')
-	console.log(tmpkeystr+' = tmpkey')
+	console.log('alphabet = ', alphabet)
+	console.log('tmpkey = ', tmpkey)
 
 	attempt = ''
 	for (x in ciphertext) {
@@ -35,10 +60,14 @@ function tryLetterSubstitutions(wordA, wordB) {
 			if (typeof maybeLetter != 'undefined') {
 				attempt += maybeLetter
 			} else {
-				attempt += cipherLetter
+				attempt += '_'
 			}
 		} else {
-			attempt += cipherLetter
+			if ('!?.,@#$%^&*()_-=+` 1234567890'.indexOf(cipherLetter) > -1) {
+				attempt += cipherLetter
+			} else {
+				attempt += '_'
+			}
 		}
 	}
 
@@ -58,7 +87,8 @@ function findPossibleWords(words) {
 	}
 }
 
-tryLetterSubstitutions(
-	'skd nz hgpdpymw otyy zcmj hmptbwm',
-	'why do bicycles fall over because'
-	)
+
+ciphertext = 'skd nz hgpdpymw otyy zcmj? hmptbwm akmd tjm asz-agjm!';
+needSolved = 'skd nz hgpdpymw otyy zcmj? hmptbwm';
+mySolution = "why do bicycles fall over? because";
+plaintext = tryLetterSubstitutions(needSolved, mySolution);
