@@ -88,7 +88,7 @@ function findPossibleWords(words) {
 }
 
 
-ciphertext = 'skd nz hgpdpymw otyy zcmj? hmptbwm akmd tjm asz-agjm!';
+ciphertext = 'skd nz hgpdpymw otyy zcmj? hmptbwm akmd tjm asz-agjmn!';
 needSolved = 'skd nz hgpdpymw otyy zcmj? hmptbwm';
 mySolution = "why do bicycles fall over? because";
 plaintext = tryLetterSubstitutions(needSolved, mySolution);
