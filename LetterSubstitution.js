@@ -40,7 +40,7 @@ function tryLetterSubstitutions(wordA, wordB) {
 	for (x in wordA) {
 		if (tmpkey[wordA[x]]) {
 			tmpkey[wordA[x]] = wordB[x]
-			console.log(wordA[x] +' should be '+ wordB[x])
+			//console.log(wordA[x] +' should be '+ wordB[x])
 		}
 	}
 
